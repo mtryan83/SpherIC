@@ -4,7 +4,7 @@ This is a basic Readme for the SpherIC package, written by Miguel Rocha.
 If you use this software, please cite [10.1093/mnras/stt984](https://doi.org/10.1093/mnras/stt984)
 aka [1301.3137](https://arxiv.org/abs/1301.3137).
 
-This version of SpherIC contains edits by Michael Ryan (mryan4@uci.edu). 
+This version of SpherIC contains edits by Michael Ryan (mryan1@sas.upenn.edu) and Ludwig Schmidt (@ludwischmidt). 
 
 For the main SpherIC documentation, see doc/spherIC.pdf.
 
@@ -27,11 +27,16 @@ For the main SpherIC documentation, see doc/spherIC.pdf.
 5. Added `spheric.py` to run SpherIC from within python. The python file
     contains the `SphericOptions` class and the `spheric([options])` function.
     Please read the file for more information about the options.
+6. Fix distribution functions ignoring stellar mass ([#1], h/t @ludwischmidt)
+7. Fix BH's not being correctly included in potential/dfs ([#3], h/t @ludwischmidt)
+
+[#1]: https://github.com/mtryan83/SpherIC/issues/1
+[#3]: https://github.com/mtryan83/SpherIC/issues/3
 
 **WARNING**: The gizmo output does not currently support the `-nostarpot`
 option.
 
-Some additional changes have been made, mostly for bugfixes.
+Some additional changes have been made, mostly for minor bugfixes.
 
 # Compiling Notes
 Since we now include hdf5 output, the hdf5 libraries need to be included. This
